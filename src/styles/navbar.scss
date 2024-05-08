@@ -1,0 +1,110 @@
+@import 'variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.floating-logo {
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  z-index: 1000;
+
+  img {
+    height: 100px;
+    width: auto;
+  }
+}
+
+.social-media-bar {
+  background-color: $color-ter-blurred-green;
+  padding: 5px 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    a {
+      margin: 0 10px;
+
+      img {
+        height: 80px;
+        width: auto;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .hamburger {
+    cursor: pointer;
+
+    .line {
+      width: 30px;
+      height: 3px;
+      background-color: $color-ter-green;
+      margin: 5px;
+    }
+  }
+}
+
+.additional-bar {
+  height: 80px;
+  background-image: linear-gradient(to right, $color-new-yellow1, $color-new-yellow2, $color-new-yellow3);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.logo-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-ter-green;
+  padding: 2rem;
+  width: 100%;
+  padding-left: 100px;
+
+  .navBar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0 15px;
+
+        a {
+          text-decoration: none;
+          color: $color-white;
+
+          &:hover, &.active {
+            background-color: $color-new-orange2;
+            color: $color-white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}

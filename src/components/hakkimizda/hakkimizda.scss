@@ -1,0 +1,68 @@
+@import '../../styles/variables.scss';
+
+.about-container {
+  font-family: 'Arial', sans-serif;
+  background-color: $color-light-grey;
+  padding: 40px;
+
+  section {
+    margin-bottom: 50px;
+    border-left: 5px solid $color-navy-blue;
+    padding: 20px;
+    background-color: $color-white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  .heading, .subheading {
+    color: $color-navy-blue;
+  }
+
+  .about-intro, .mission-statement, .vision-statement {
+    .heading {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .subheading {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: $color-dark-grey;
+    }
+  }
+
+  .team-introduction {
+    background-color: $color-sun-yellow;
+    .team-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .subheading {
+        color: $color-navy-blue;
+      }
+
+      .team-link {
+        background-color: $color-soothing-green;
+        color: $color-white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+
+        &:hover {
+          background-color: darken($color-soothing-green, 10%);
+        }
+      }
+    }
+  }
+}

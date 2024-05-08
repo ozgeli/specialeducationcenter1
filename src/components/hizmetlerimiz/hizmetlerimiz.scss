@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  .service {
+    background-color: $color-white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+
+    .image-container {
+      height: 200px; // Set height back to original
+      background-size: cover; // Ensure the image covers the area
+      background-position: center; // Center the image within the container
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: $color-navy-blue;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: $color-dark-grey;
+      font-size: 16px; // Keeping text size reasonable for readability
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    .service {
+      width: 100%;
+    }
+  }
+}
